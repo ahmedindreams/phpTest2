@@ -31,10 +31,34 @@ echo "</pre>";
 
    $txt = array("Sara"=>31,"John"=>41,"Walaa"=>39,"Ramy"=>40);
 
+   foreach($txt as $key => $value)
+   {
+     echo $key." =>". $value;
+   }
+   echo nl2br("\n") ;
    echo asort($txt);
+   foreach($txt as $key => $value)
+   {
+     echo $key." =>". $value;
+   }
+   echo nl2br("\n") ;
    echo ksort($txt);
+   foreach($txt as $key => $value)
+   {
+     echo $key." =>". $value;
+   }
+   echo nl2br("\n") ;
    echo arsort($txt);
+   foreach($txt as $key => $value)
+   {
+     echo $key." =>". $value;
+   }
+   echo nl2br("\n") ;
    echo krsort($txt);
+   foreach($txt as $key => $value)
+   {
+     echo $key." =>". $value;
+   }
    
 ?>
 
