@@ -10,6 +10,10 @@ echo nl2br($string);
 
 echo $_SERVER['HTTP_HOST'];
 
+echo "<pre>";
+print_r($_SERVER);
+echo "</pre>";
+
         $numbers = array( 12,45 ,10,25);
 
         //  $numbers[0] = 12;
@@ -23,6 +27,7 @@ echo $_SERVER['HTTP_HOST'];
     echo $average;
 
    echo rsort($numbers);
+   
 
    $txt = array("Sara"=>31,"John"=>41,"Walaa"=>39,"Ramy"=>40);
 
