@@ -1,0 +1,50 @@
+<?php
+
+
+$string = "foo"."\n"."bar";
+echo nl2br($string);
+
+// md5()	Calculates the MD5 hash of a string
+// str_split()	Splits a string into an array
+// trim()	Removes whitespace or other characters from both sides of a string
+
+echo $_SERVER['HTTP_HOST'];
+
+        $numbers = array( 12,45 ,10,25);
+
+        //  $numbers[0] = 12;
+        //  $numbers[1] = 45;
+        //  $numbers[2] = 10;
+        //  $numbers[3] = 25;
+  
+    echo array_sum($numbers);
+
+    $average = array_sum($numbers)/count($numbers);
+    echo $average;
+
+   echo rsort($numbers);
+
+   $txt = array("Sara"=>31,"John"=>41,"Walaa"=>39,"Ramy"=>40);
+
+   echo asort($txt);
+   echo ksort($txt);
+   echo arsort($txt);
+   echo krsort($txt);
+   
+?>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
