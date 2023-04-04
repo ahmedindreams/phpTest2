@@ -111,5 +111,48 @@ if(isset($_POST['submit'])){
    }
   }
 ?>
+
+
+
+
+
+<?php
+
+
+$students = [
+    ['name' => 'Alaa', 'email' => 'ahmed@test.com', 'status' => 'CMS'],
+    ['name' => 'Shamy', 'email' => 'ali@test.com', 'status' => 'OS'],
+    ['name' => 'Youssef', 'email' => 'basem@test.com', 'status' => 'OS'],
+    ['name' => 'Waleid', 'email' => 'farouk@test.com', 'status' => 'CMS'],
+    ['name' => 'Rahma', 'email' => 'hany@test.com', 'status' => 'OS'],
+];
+?>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($students as $student) { ?>
+            <tr>
+                
+                <?php if ($student['status'] == 'CMS') { ?>
+                  <td style="color:red;"><?php echo $student['name']; ?></td>
+                <td style="color:red;"><?php echo $student['email']; ?></td>
+                    <td style="color:red;"><?php echo $student['status']; ?></td>
+                <?php } else { ?>
+                  <td><?php echo $student['name']; ?></td>
+                <td><?php echo $student['email']; ?></td>
+                    <td><?php echo $student['status']; ?></td>
+                <?php } ?>
+            </tr>
+        <?php } ?>
+    </tbody>
+</table>
+
 </body>
 </html>
