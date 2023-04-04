@@ -86,7 +86,7 @@
           <label for="male">Male</label>
          <input type="radio" id="female" name="gender" value="female">
           <label for="female">Female</label><span style="color:red">*</span><br/>
-          Select Courses<select name="Courses" id="Courses" multiple><br/>
+          Select Courses<select name="Courses[]" id="Courses" multiple size="4"><br/>
            <option value="PHP">PHP</option>
           <option value="Javascript">Javascript</option>
          <option value="Mysql">Mysql</option>
@@ -105,8 +105,16 @@ if(isset($_POST['submit'])){
       echo "Email : ". $_POST['Email']. " <br />";
       echo "Group # : ". $_POST['GroupNo']. " <br />";
       echo "ClassDetails : ". $_POST['ClassDetails']. " <br />";
+
+      // header("Content-Type: text/plain");
+      
+
       echo "Gender : ". $_POST['gender']. " <br />";
-      echo "Your courses are : ". $_POST['Courses']. " <br />";
+      // echo "Your courses are : ". $_POST['Courses']. " <br />";
+
+      echo "Courses : "; 
+      foreach ($_POST['Courses'] as $selectedOption)
+      echo $selectedOption."  ";
 
    }
   }
